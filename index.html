@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplotel Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+
+      .navbar {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        padding-right: 20px;
+        background-color: #f0f0f0;
+        z-index: 100;
+      }
+
+      .navlinks {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+      }
+
+      .navlinks > li {
+        width: 100px;
+      }
+
+      .cartDiv {
+        display: flex;
+        gap: 10px;
+      }
+
+      .burger-icon {
+        display: none;
+      }
+
+      .section-one {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-image: url("./Images/img1.jpg");
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      .section-one > div {
+        color: white;
+        max-width: 600px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        left: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 58, 58, 0.435);
+        padding: 25px;
+      }
+
+      .section-one h2 {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 40px;
+        margin: 0;
+      }
+
+      .section-one p{
+        font-weight: 400;
+      }
+
+      @media screen and (max-width: 768px) {
+        .navlinks {
+          display: none;
+        }
+        .burger-icon {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="material-symbols-outlined burger-icon"> menu </span>
+      <ul class="navlinks">
+        <li>Home</li>
+        <li>Order</li>
+        <li>Food</li>
+        <li>Restaurant</li>
+        <li>Testimonials</li>
+        <li>Contact Us</li>
+      </ul>
+      <div class="cartDiv">
+        <span class="material-symbols-outlined"> call </span>
+        <span class="material-symbols-outlined"> shopping_cart </span>
+      </div>
+    </nav>
+    <section class="section-one">
+      <div>
+        <h2>Lorem Ipsum</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in porro
+          deleniti voluptatibus, quaerat fugit consectetur aut dignissimos
+          tempore cumque aperiam earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, id? Lorem, ipsum.
+        </p>
+      </div>
+    </section>
+    <section class="section-two"></section>
+  </body>
+</html>
